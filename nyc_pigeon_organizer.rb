@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
     end
   end
 #  binding.pry
+
 # new_hash = {
 # "Theo"=>{},
 # "Peter Jr."=>{},
