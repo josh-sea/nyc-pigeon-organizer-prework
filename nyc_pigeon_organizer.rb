@@ -27,10 +27,10 @@ def nyc_pigeon_organizer(data)
 # }
 
 #second piece enumerates over data and puts in new name hash
-  data.each do |cgl, facts|
-    new_hash.keys.each do |pigeon_name|
-      new_hash[pigeon_name][cgl] = []
-      facts.each do |facts_key, array_names|
+  data.each do |cgl, pdata|
+    new_hash.keys.each do |names|
+      new_hash[names][cgl] = []
+      pdata.each do |facts_key, array_names|
         if array_names.include? (pigeon_name)
         new_hash[pigeon_name][cgl].push(facts_key.to_s)
         
