@@ -12,16 +12,21 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-   data.each do |cgl, pdata|
-#   binding.pry
-    pdata.each do |identifier, name|
-      for i in 0...name.length
-#     binding.pry
-        new_hash[name[i]] = {}
-#        binding.pry
+  new_phash = {}
+  data.each do |cgl, pdata|
+    pigeon_list.keys.each do |pigeon_name|
+      pigeon_list[pigeon_name][color_gender_lives] = []
+    
+   
+      facts.each do |facts_key, array_names|
+    
+    
+        if array_names.include? (pigeon_name)
+       
+        pigeon_list[pigeon_name][color_gender_lives].push(facts_key.to_s)
+        end
+        end
       end
-    end
-  end
   
 end
 
