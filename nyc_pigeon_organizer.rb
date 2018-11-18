@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  binding.pry
+#  binding.pry
 # new_hash = {
 # "Theo"=>{},
 # "Peter Jr."=>{},
@@ -28,6 +28,7 @@ def nyc_pigeon_organizer(data)
 #second piece enumerates over data and puts in new name hash
   data.each do |cgl, pdata|
     new_hash.keys.each do |names|
+      binding.pry
       new_hash[names][cgl] = []
       identifier.each do |keys, name_arrays|
         if name_arrays.include? (pigeon_name)
