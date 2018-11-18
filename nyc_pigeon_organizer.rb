@@ -12,6 +12,17 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+   data.each do |cgl, pdata|
+#   binding.pry
+    pdata.each do |identifier, name|
+      for i in 0...name.length
+#     binding.pry
+        new_hash[name[i]] = {}
+#        binding.pry
+      end
+    end
+  end
+  
 end
 
 
