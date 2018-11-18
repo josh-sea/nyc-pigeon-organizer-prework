@@ -30,8 +30,6 @@ def nyc_pigeon_organizer(data)
   data.each do |color_gender_lives, facts|
     new_hash.keys.each do |pigeon_name|
       new_hash[pigeon_name][color_gender_lives] = []
-    
-   
       facts.each do |facts_key, array_names|
     
     
