@@ -2,6 +2,8 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
   new_hash = {}
+  
+#first section creates hash with keys of birds names
   data.each do |cgl, pdata|
 #   binding.pry
     pdata.each do |identifier, name|
@@ -12,6 +14,8 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  
+#second piece enumerates over data and puts in new name hash
   data.each do |cgl, pdata|
     new_hash.keys.each do |names|
       new_hash[names][cgl] = []
@@ -21,7 +25,7 @@ def nyc_pigeon_organizer(data)
         end
         end
       end
-  
+  new_hash
 end
 
 
