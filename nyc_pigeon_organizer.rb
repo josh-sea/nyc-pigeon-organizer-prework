@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
     end
   end
   binding.pry
-  new_hash
+
 #second piece enumerates over data and puts in new name hash
   data.each do |cgl, pdata|
     new_hash.keys.each do |names|
