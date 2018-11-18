@@ -13,15 +13,10 @@ def nyc_pigeon_organizer(data)
     end
   end
   data.each do |cgl, pdata|
-    new_hash.keys.each do |pigeon_name|
-      pigeon_list[pigeon_name][color_gender_lives] = []
-    
-   
-      facts.each do |facts_key, array_names|
-    
-    
+    new_hash.keys.each do |names|
+      new_hash[names][cgl] = []
+      identifier.each do |keys, name_arrays|
         if array_names.include? (pigeon_name)
-       
         pigeon_list[pigeon_name][color_gender_lives].push(facts_key.to_s)
         end
         end
