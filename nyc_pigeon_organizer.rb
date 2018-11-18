@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
 #    for i in 0...new_hash.keys.length
 #      new_hash.keys[i][cgl] = []
     new_hash.keys.each do |names|
-      binding.pry
+ #    binding.pry
       new_hash[names][cgl] = []
       identifier.each do |keys, name_arrays|
         if name_arrays.include? (pigeon_name)
