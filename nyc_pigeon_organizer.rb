@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   end
   new_phash = {}
   data.each do |cgl, pdata|
-    pigeon_list.keys.each do |pigeon_name|
+    new_phash.keys.each do |pigeon_name|
       pigeon_list[pigeon_name][color_gender_lives] = []
     
    
