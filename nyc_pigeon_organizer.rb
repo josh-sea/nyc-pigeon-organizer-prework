@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
     new_hash.keys.each do |names|
       new_hash[names][cgl] = []
       identifier.each do |keys, name_arrays|
-        if array_names.include? (pigeon_name)
+        if name_arrays.include? (pigeon_name)
         pigeon_list[pigeon_name][color_gender_lives].push(facts_key.to_s)
         end
         end
