@@ -33,8 +33,8 @@ def nyc_pigeon_organizer(data)
 #      binding.pry
       new_hash.keys[i][cgl] = []
       pdata.each do |identifier, name|
-        if name.include? (names)
-        new_hash[names][cgl].push(identifier.to_s)
+        if name.include? (new_hash.keys[i])
+        new_hash[new_hash.keys[i]][cgl].push(identifier.to_s)
         end
       end
     end
