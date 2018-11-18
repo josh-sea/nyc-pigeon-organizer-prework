@@ -23,8 +23,9 @@ def nyc_pigeon_organizer(data)
         if name_arrays.include? (pigeon_name)
         pigeon_list[pigeon_name][color_gender_lives].push(facts_key.to_s)
         end
-        end
       end
+    end
+  end
   new_hash
 end
 
