@@ -36,7 +36,7 @@ def nyc_pigeon_organizer(data)
  #       binding.pry
         if name.include?(i)
 #          binding.pry
-          new_hash[names][cgl].push(keys.to_s)
+          new_hash[i][cgl].push(keys.to_s)
         end
       end
     end
