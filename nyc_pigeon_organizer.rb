@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
       new_hash.keys[i][cgl] = []
       pdata.each do |identifier, name|
         if name.include? (new_hash.keys[i])
-        new_hash[new_hash.keys[i]][cgl].push(identifier.to_s)
+          new_hash[new_hash.keys[i]][cgl].push(identifier.to_s)
         end
       end
     end
