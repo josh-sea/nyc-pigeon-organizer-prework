@@ -28,45 +28,16 @@ def nyc_pigeon_organizer(data)
 
 #second piece enumerates over data and puts in new name hash
   data.each do |cgl, pdata|
-   # new_hash.keys.each do |names|
-    for i in 0...new_hash.keys.length  
+    new_hash.keys.each do |names|
 #      binding.pry
-      new_hash.keys[i][cgl] = []
+      new_hash[names][cgl] = []
       pdata.each do |identifier, name|
-        if name.include? (new_hash.keys[i])
-          binding.pry
-          new_hash[new_hash.keys[i]][cgl].push(identifier.to_s)
+        binding.pry
+        if name.include? (names)
+        new_hash[names][cgl].push(identifier.to_s)
         end
       end
     end
   end
   new_hash
 end
-
-
-# def nyc_pigeon_organizer(pigeon_data)
-#   # write your code here!
-#   pigeon_list = {}
-#   pigeon_data.each do |color_gender_lives, facts|
-#     facts.each do |facts_key, array_names|
-#       array_names.each do |names|
-#       pigeon_list[names] = {}
-#       end
-#     end
-#   end
-#   pigeon_data.each do |color_gender_lives, facts|
-#     pigeon_list.keys.each do |pigeon_name|
-#       pigeon_list[pigeon_name][color_gender_lives] = []
-    
-   
-#       facts.each do |facts_key, array_names|
-    
-    
-#         if array_names.include? (pigeon_name)
-       
-#         pigeon_list[pigeon_name][color_gender_lives].push(facts_key.to_s)
-#         end
-#         end
-#       end
-#   end
-# pigeon_list
